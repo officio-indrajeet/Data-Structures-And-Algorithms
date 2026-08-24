@@ -1,4 +1,7 @@
 // Leetcode Problem 345: Reverse Vowels of a String
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 public class ReverseVowelsOfAString {
     public String reverseVowels(String s) {
         if (s == null || s.length() == 0) {
