@@ -2,7 +2,7 @@
 // TC: O(n) SC: O(1)
 package arrays;
 
-public class moveZeros {
+public class moveZeroes {
     public void moveZeros(int[] nums) {
         int n = nums.length;
         int left = 0;
