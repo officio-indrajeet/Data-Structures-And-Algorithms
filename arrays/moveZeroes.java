@@ -15,4 +15,13 @@ public class moveZeroes {
             }
         }
     }
+
+    public static void main(String[] args) {
+        int[] nums = { 0, 1, 0, 3, 12 };
+        moveZeroes obj = new moveZeroes();
+        obj.moveZeros(nums);
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
+    }
 }
