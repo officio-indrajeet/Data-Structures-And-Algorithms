@@ -2,7 +2,7 @@
 // TC: O(n) SC: O(n)
 package arrays;
 
-public class ShuffleArray {
+public class ShuffleTheArray {
     public int[] shuffle(int[] nums, int n) {
         int[] shuffled = new int[2 * n];
         for (int i = 0; i < n; i++) {
@@ -15,7 +15,7 @@ public class ShuffleArray {
     public static void main(String[] args) {
         int[] nums = { 2, 5, 1, 3, 4, 7 };
         int n = 3;
-        ShuffleArray obj = new ShuffleArray();
+        ShuffleTheArray obj = new ShuffleTheArray();
         int[] shuffled = obj.shuffle(nums, n);
         for (int num : shuffled) {
             System.out.print(num + " ");
