@@ -1,5 +1,6 @@
 // leetcode 414. Third Maximum Number
-// TC: O(n) SC: O(1)
+// TC: O(n) 
+// SC: O(1)
 package arrays;
 
 public class ThirdMaximumNumber {
