@@ -1,6 +1,7 @@
 // leetcode 229. Majority Element II
 // TC: O(n) 
-// SC: O(1)
+// SC: O(1), ignoring the output list, the space complexity is O(1) 
+// since we are using a constant amount of extra space for variables.
 package arrays;
 
 import java.util.*;
