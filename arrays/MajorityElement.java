@@ -1,5 +1,6 @@
 // leetcode 169. Majority Element
-// TC: O(n) SC: O(1)
+// TC: O(n) 
+// SC: O(1)
 package arrays;
 
 public class MajorityElement {
