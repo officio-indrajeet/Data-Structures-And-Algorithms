@@ -2,6 +2,7 @@
 // https://leetcode.com/problems/maximum-alternating-subsequence-sum/
 
 class Solution {
+    /* Bottom-Up DP */
     public long maxAlternatingSum(int[] nums) {
         int n = nums.length;
         long[][] dp = new long[n+1][2];
