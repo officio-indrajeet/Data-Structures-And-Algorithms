@@ -2,9 +2,33 @@
 // https://leetcode.com/problems/maximum-length-of-pair-chain/
 
 class Solution {
-    /* memoization - Top down DP
+    /* Bottom Up DP
     ** Time complexity - O(n^2)
     */
+    public int findLongestChain(int[][] nums) {
+        Arrays.sort(nums, (a, b) -> Integer.compare(a[1], b[1])); // You can select pairs in any order.
+        int n = nums.length;
+        int[] dp = new int[n];
+        Arrays.fill(dp, 1);
+        int maxLIS = 1;
+        for(int i=0;i<n;i++) {
+                for(int j=0;j<i;j++) {
+                    if(nums[j][1] < nums[i][0]) {
+                        dp[i] = Math.max(dp[i], dp[j]+1);
+                        maxLIS = Math.max(maxLIS, dp[i]);
+                    }
+                }
+        }
+
+    return maxLIS;
+    }
+}
+
+
+    
+/* memoization - Top down DP
+    ** Time complexity - O(n^2)
+    
     public int findLongestChain(int[][] pairs) {
         Arrays.sort(pairs, (a, b) -> Integer.compare(a[1], b[1])); // You can select pairs in any order.
         int[][] dp = new int[1001][1001];
@@ -36,6 +60,8 @@ class Solution {
         return Math.max(take, skip);
     }
 }
+
+*/
     
 /* Recursion - O(2^n)
     public int findLongestChain(int[][] pairs) {
